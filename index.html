@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+</head>
+<body>
+    <script>
+    // concatination and variables
+    let storeName = "Happy";
+    let storeType = "Paws";
+    let fullStoreName = storeName + " " + storeType;  
+    console.log("Welcome to " + fullStoreName + "!");
+
+    let owner = "Isabelle";
+    let message = "The owner of " + fullStoreName + " is " + owner + ".";
+    console.log(message);
+
+    let offer = "Buy 2 get 1 free";
+    console.log("Today's offer at " + fullStoreName + ": " + offer);
+
+    // arrays and loops
+    let pets = ["Bella", "Charlie", "Luna", "Lucy", "Max", "Bailey"];
+
+    for (let i = 0; i < pets.length; i++) {
+        console.log("Pet: " + pets[i]);
+    }
+
+    for (pet of pets) {
+        console.log("Pet: " + pet);
+    }
+
+    count = 0;
+    while (count < pets.length) {
+        console.log("Pet: " + pets[count]);
+        count++;
+    }
+
+    // functions
+    function calcFree(numPets) {
+        return numPets * feePerPet;
+    }
+
+    let pet = {
+        name: "Buddy",
+        type: "Dog",
+        age: 3,
+        available: true,
+        example: {
+            subprop: "value",
+        }
+    };
+    console.log('${pet.name} is a ${pet.age} year old ${pet.type}.');
+   </script>
+</body>
+</html>
